@@ -1,0 +1,64 @@
+
+/*Fjerner default styling*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+  }
+
+/* Stil for p-elementerne */
+.højre, .venstre {
+    font-size: 80px;
+    white-space: nowrap;
+    position: absolute;
+    color: #d52228;
+    font-weight: 100;
+}
+
+div p:nth-child(2) { top: 80px; }
+div p:nth-child(3) { top: 155px; }
+div p:nth-child(4) { top: 235px; }
+div p:nth-child(5) { top: 315px; }
+div p:nth-child(6) { top: 395px; }
+div p:nth-child(7) { top: 470px; }
+
+
+
+/* Animering for elementerne, der skal glide til højre */
+.højre {
+    animation: glideHøjre 5s linear infinite;
+    right: 100%;  /* Start uden for skærmen */
+}
+
+/* Animering for elementerne, der skal glide til venstre */
+.venstre {
+    animation: glideVenstre 5s linear infinite;
+    left: 100%;  /* Start uden for skærmen */
+}
+
+/* Glide til højre */
+@keyframes glideHøjre {
+    0% {
+        right: 100%;
+    }
+    50% {
+        right: -100%;
+    }
+    100% {
+        right: 100%;
+    }
+}
+
+/* Glide til venstre */
+@keyframes glideVenstre {
+    0% {
+        left: 100%; /* Start uden for skærmen til venstre */
+    }
+    50% {
+        left: -100%; /* Gå hele vejen over skærmen til højre */
+    }
+    100% {
+        left: 100%; /* Kom tilbage til startpunkt */
+    }
+}
