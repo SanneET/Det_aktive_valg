@@ -2,6 +2,7 @@
 
 const endpoint = 'json/jsondata.json';
 
+/* Erklære en variabel som refererer til knappen med ID'et valgEtBtn */
 const fetchValgEtBtn = document.getElementById('valgEtBtn');
 
 const fetchValgToBtn = document.getElementById('valgToBtn');
@@ -14,4 +15,6 @@ fetchValgEtBtn.addEventListener('click', function(){
 
 
     })
-})
+
+
+
