@@ -15,5 +15,14 @@ fetchValgEtBtn.addEventListener('click', function(){
 
  }});
 
+/* Tilføjer en eventListner (lytter) til variablen: fetchValgToBtn */
+fetchValgToBtn.addEventListener('click', function(){
+    fetch(endpoint)
+    .then(Response => Response.json()) //konvetere response til JSON-format.
+    .then(jsonData => {
 
+        
+    })
+    
+})
 
