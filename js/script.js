@@ -13,7 +13,7 @@ fetchValgEtBtn.addEventListener('click', function(){
     .then(Response => Response.json()) //konvetere response til JSON-format.
     .then(jsonData => {
 
- }});
+    });
 
 
 
