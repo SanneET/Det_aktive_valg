@@ -1,4 +1,64 @@
-/* Index styling */
+/* CSS Reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    overflow: hidden;
+}
+
+/* Stil for p-elementerne */
+.højre, .venstre {
+    font-size: 80px;
+    white-space: nowrap;
+    position: absolute;
+    color: #d52228;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Placering af elementerne med forskellig topafstand */
+div p:nth-child(1) { top: 0; }
+div p:nth-child(2) { top: 80px; }
+div p:nth-child(3) { top: 155px; }
+div p:nth-child(4) { top: 235px; }
+div p:nth-child(5) { top: 315px; }
+div p:nth-child(6) { top: 395px; }
+div p:nth-child(7) { top: 470px; }
+
+/* Animering for elementerne, der skal glide fra venstre til højre */
+.venstre {
+    animation: glideLeftToRight 60s linear infinite;
+}
+
+/* Animering for elementerne, der skal glide fra højre til venstre */
+.højre {
+    animation: glideRightToLeft 60s linear infinite;
+}
 
 
-/* Indhold styling */
+@keyframes glideLeftToRight {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes glideRightToLeft {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+/*Vi har placeret den downloadede font i mappen "fonts", som vi også har linket til her*/
+@font-face {
+    font-family: 'impact';
+    src: url(fonts/impact.ttf) format('truetype');
+}
