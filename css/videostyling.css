@@ -1,0 +1,59 @@
+/* Sørger for at kroppen og html-filen fylder hele skærmen */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Gør containeren (videoIndhold) til at fylde hele skærmen med padding */
+.videoIndhold {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; /* Valgfri: sort baggrund bag videoen */
+    padding: 1rem; /* Juster denne værdi for mere eller mindre plads */
+    box-sizing: border-box; /* Gør padding til en del af det totale areal */
+}
+
+/* Gør selve videoen lidt mindre end containeren */
+#video {
+    width: 100%;
+    height: 100%;
+    max-width: 98%; /* Videoens maksimale bredde i forhold til containeren */
+    max-height: 98%; /* Videoens maksimale højde i forhold til containeren */
+    object-fit: contain; /* Tilpas videoen uden at beskære */
+    background-color: black; /* Ekstra baggrund, hvis videoen har sorte kanter */
+}
+
+
+/* Knappernes container */
+#valgBtn {
+    position: absolute;
+    top: 10%; /* Justér højden som ønsket */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1rem; /* Afstand mellem knapperne */
+}
+
+/* Styling af knapper */
+#valgEtBtn, #valgToBtn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7); /* Halv-transparent sort baggrund */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#valgEtBtn:hover, #valgToBtn:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Ændrer farve ved hover */
+}
