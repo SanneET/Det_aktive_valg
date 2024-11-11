@@ -79,7 +79,7 @@ div p:nth-child(11) { top: 770px; }
     left: 50%;
     transform: translate(-50%, -50%);
     color:white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 1.7rem;
   }
 
