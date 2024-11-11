@@ -22,7 +22,7 @@ fetchValgToBtn.addEventListener('click', function(){
     .then(jsonData => {
 
         
-    })
+    });
     
-})
+});
 
