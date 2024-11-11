@@ -57,6 +57,30 @@ div p:nth-child(7) { top: 470px; }
     }
   }
 
+  .container{
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 350px;
+  }
+
+  img{
+    width: 300px;
+  }
+
+  .videre{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.7rem;
+  }
+
+
+
+
 /*Vi har placeret den downloadede font i mappen "fonts", som vi også har linket til her*/
 @font-face {
     font-family: 'impact';
