@@ -20,13 +20,18 @@ body{
 }
 
 /* Placering af elementerne med forskellig topafstand */
-div p:nth-child(1) { top: 0; }
-div p:nth-child(2) { top: 80px; }
-div p:nth-child(3) { top: 155px; }
-div p:nth-child(4) { top: 235px; }
-div p:nth-child(5) { top: 315px; }
-div p:nth-child(6) { top: 395px; }
-div p:nth-child(7) { top: 470px; }
+div p:nth-child(1) { top: 0px; }
+div p:nth-child(2) { top: 77px; }
+div p:nth-child(3) { top: 154px; }
+div p:nth-child(4) { top: 231px; }
+div p:nth-child(5) { top: 308px; }
+div p:nth-child(6) { top: 385px; }
+div p:nth-child(7) { top: 462px; }
+div p:nth-child(8) { top: 539px; }
+div p:nth-child(9) { top: 616px; }
+div p:nth-child(10) { top: 693px; }
+div p:nth-child(11) { top: 770px; }
+
 
 /* Animering for elementerne, der skal glide fra venstre til højre */
 .venstre {
