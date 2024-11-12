@@ -4,21 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/videostyling.css">
+    <link rel="stylesheet" href="css/knapstyling.css">
     <title>Indhold</title>
 </head>
 
 <body>
-    <section class="videoBeholder">
-        <!-- Videoelement til at afspille videoen -->
+  <!--   <section class="videoBeholder">
+        Videoelement til at afspille videoen 
         <div class="videoIndhold">
             <video id="video" controls></video>
         </div>
+    </section> -->
 
-        <div id="valgBtn">
-            <button id="valgEtBtn"></button>
-            <button id="valgToBtn"></button>
-        </div>
-    </section>
+    <section class="flex">
+
+        <aside class="placering" id="ventre">
+            <a href="#">
+                <div class="imgBtn">
+                     <img src="img/knapTre.png" alt="knap til venstre" class="knapper">
+                </div>
+                <p class="btnTekst" id="tekstV">forkert</p>
+            </a>
+        </aside>
+
+        <aside class="placering" id="højre">
+            <a href="test.html">
+                <div class="imgBtn">
+                    <img src="img/knapTo.png" alt="knap til højre" class="knapper">
+                </div>
+                <p class="btnTekst" id="tekstH">rigtig</p>
+            </a>
+        </aside>
+
+    </section>    
+
+ 
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,44 @@
+/* anchor tag */
+a{
+  text-decoration: none;
+}
+
+/* knappers størrelse */
+img.knapper{
+  width: 300px;
+}
+
+.flex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 15rem;
+}
+
+.placering{
+  position: relative;
+  text-align: center;
+  color: white;
+  
+}
+
+.btnTekst{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.7rem;
+}
+
+/* skrift for knapper */
+.btnTekst{
+  color:hotpink;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.7rem;
+} 
+
