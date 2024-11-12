@@ -1,13 +1,5 @@
 "use strict";
 
-const endpoint = 'json/jsondata.json';
-
-const fetchValgEtBtn = document.getElementById('valgEtBtn');
-
-const fetchValgToBtn = document.getElementById('valgToBtn');
-
-const videoElement = document.getElementById('video');
-
     // Function to fetch JSON and set the video source
     async function setVideoSource() {
         try {
@@ -42,18 +34,3 @@ const videoElement = document.getElementById('video');
     window.onload = setVideoSource;
     /*const video = document.getElementById('video');
     video.play();*/
-
-
-/* Tilføjer en eventListner (lytter) til variablen: fetchValgToBtn */
-fetchValgToBtn.addEventListener('click', function(){
-    fetch(endpoint)
-    .then(Response => Response.json()) //konvetere response til JSON-format.
-    .then(jsonData => {
-        videoElement.src = jsonData.videoOne;
-
-
-        
-    });
-    
-});
-
