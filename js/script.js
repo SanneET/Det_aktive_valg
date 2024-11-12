@@ -2,6 +2,7 @@
 
 const endpoint = 'json/jsondata.json';
 
+
 /* Erklære en variabel som refererer til knappen med ID'et valgEtBtn */
 const fetchValgEtBtn = document.getElementById('valgEtBtn');
 
@@ -11,27 +12,26 @@ const videoElement = document.getElementById('video');
 
 fetchValgEtBtn.addEventListener('click', function() {
     fetch(endpoint)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Netværksfejl: ' + response.status);
-            }
-            return response.json();
-        })
+        .then(response => response.json())
         .then(jsonData => {
-            // Forvent, at jsonData er en liste og hent første element (hvis JSON er et array)
-            const videoData = jsonData[0]; // Brug kun dette, hvis JSON er en array
-            // Hvis JSON er et objekt, brug jsonData.videoOne direkte uden [0]
-            
+            console.log("JSON data:", jsonData); // Tjek om JSON-dataene er korrekt hentet
+
+            // Hvis jsonData er en liste, hent første element
+            const videoData = Array.isArray(jsonData) ? jsonData[0] : jsonData;
+            console.log("Video URL:", videoData.videoOne); // Tjek video-URL'en
+
             videoElement.innerHTML = ''; // Tøm eksisterende kilder
 
             const sourceElement = document.createElement('source');
-            sourceElement.src = videoData.videoOne; // Opdater stien hvis videoOne er i jsonData
+            sourceElement.src = videoData.videoOne; // Sæt stien til videoen fra JSON
             sourceElement.type = 'video/mp4';
 
             videoElement.appendChild(sourceElement); // Tilføj source til videoelementet
             videoElement.load(); // Indlæs videoen
-        })
+            videoElement.play(); // Afspil videoen med det samme
+        });
 });
+
 
 /* Tilføjer en eventListner (lytter) til variablen: fetchValgToBtn */
 fetchValgToBtn.addEventListener('click', function(){
