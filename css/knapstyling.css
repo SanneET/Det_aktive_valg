@@ -8,8 +8,6 @@ img.knapper{
   width: 300px;
 }
 
-
-/* flexbox for knapper */
 .flex{
   display: flex;
   flex-direction: row;
@@ -17,8 +15,25 @@ img.knapper{
   align-content: center;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 15rem;
 }
 
+.placering{
+  position: relative;
+  text-align: center;
+  color: white;
+  
+}
+
+.btnTekst{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.7rem;
+}
 
 /* skrift for knapper */
 .btnTekst{
@@ -27,20 +42,3 @@ img.knapper{
   font-size: 1.7rem;
 } 
 
-
-
-/* placering af tekst til venstre */
-#tekstV{
-  position: absolute;
-  bottom: 20rem;
-  left: 25rem;
-  background-color: transparent;
-}
-
-/* placering af tekst til højre */
-#tekstH{
-  position: absolute;
-  bottom: 20rem;
-  right: 25rem;
-  background-color: transparent;
-}
