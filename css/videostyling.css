@@ -47,13 +47,12 @@ html, body {
     padding: 0.5rem 1rem;
     font-size: 1rem;
     color: white;
-    background-color: rgba(0, 0, 0, 0.7); /* Halv-transparent sort baggrund */
+    /* background-color: rgba(0, 0, 0, 0.7); /* Halv-transparent sort baggrund */
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-#valgEtBtn:hover, #valgToBtn:hover {
+/* #valgEtBtn:hover, #valgToBtn:hover {
     background-color: rgba(255, 255, 255, 0.3); /* Ændrer farve ved hover */
-}
