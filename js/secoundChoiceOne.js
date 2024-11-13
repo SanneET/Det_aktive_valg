@@ -16,7 +16,7 @@ async function setVideoSource() {
         const data = await response.json();
             
         // Get the video source path from the JSON data
-        const videoSrc = data[0].videoOne;
+        const videoSrc = data[3].videoDoNotVejDig;
 
         // Select the video element
         const video = document.getElementById('video');
@@ -45,4 +45,4 @@ async function setVideoSource() {
     // After 3 seconds (3000 milliseconds), add the 'show' class to the element
 setTimeout(() => {
     document.getElementById("flexId").classList.add("show");
-  }, 47000);
+  }, 43000);
