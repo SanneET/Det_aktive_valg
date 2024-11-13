@@ -1,0 +1,12 @@
+/* Initially, the element is hidden */
+.flex {
+    opacity: 0;
+    transition: opacity 1.5s ease-in; /* Define the fade-in transition */
+    color: hotpink;
+  }
+  
+  /* When the 'show' class is added, it becomes visible */
+  .show {
+    opacity: 1; /* Fade in */
+  }
+  
