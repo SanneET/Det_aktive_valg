@@ -34,3 +34,6 @@ async function setVideoSource() {
 
 // Call the function when the page loads
 window.onload = setVideoSource;
+setTimeout(() => {
+    document.getElementById("flexId").classList.add("show");
+  }, 26000);
